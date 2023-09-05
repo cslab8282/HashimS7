@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffdb58, #ff79c6);
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(194, 229, 228);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .header {
+            font-size: 48px;
+            text-align: center;
+            animation: text3d 2s ease-in-out, fadeInUp 2s ease;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #ff007f; /* Colorful text */
+        }
+
+        .quotes {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            animation: text3d 2s ease-in-out, fadeInUp 2s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            color: #ff7f00; /* Colorful text */
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            animation: pulse 2s infinite; /* Changed animation to pulse */
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #5a5856;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            object-fit:fill;
+        }
+
+        .section {
+            text-align: center;
+            margin-top: 40px;
+            animation: text3d 2s ease-in-out, fadeInUp 2s ease;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ff00ff; /* Colorful text */
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .celebration {
+            margin-top: 40px;
+            animation: bounce 2s infinite;
+            text-transform: uppercase;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            color: #fa0000; /* Colorful text */
+        }
+
+        @keyframes text3d {
+            0% {
+                transform: translateZ(0);
+            }
+            50% {
+                transform: translateZ(20px);
+            }
+            100% {
+                transform: translateZ(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Happy Teacher's Day!</div>
+        <div class="quotes">
+            "A good teacher can inspire hope, ignite the imagination, and instill a love for learning." - Brad Henry
+        </div>
+        <div class="image-container">
+            <img src="teacher.jpg" alt="Teacher" />
+        </div>
+        <div class="section">
+            <h2>You are not just a teacher; you are a mentor, a friend, and an inspiration</h2>
+            <p>Thank you for your dedication and guidance. Your impact on our lives is immeasurable.</p>
+        </div>
+        <div class="celebration">
+            🎉 Let's celebrate our amazing teachers! 🎉
+        </div>
+    </div>
+</body>
+</html>
